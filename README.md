@@ -38,9 +38,9 @@ for this purpose of creating an environment that executes whole process of testi
 called “docker-compose.yml” has created as such for assignment of the root privileges to
 the docker container while also introducing the shared memory of it.
 
-
 ![image](https://user-images.githubusercontent.com/41292368/126209573-d4247965-715f-4850-8e8c-38dc9ee52980.png)
-    - The following command was executed in the folder which contains that yml file.
+
+    -The following command was executed in the folder which contains that yml file.
                 `$ docker-compose up -d `
     - After the container was created and executed, the following command is executed in order to obtain initial password for access to Jenkins.
                 `$ docker exec my-jenkins-3 cat /var/jenkins_home/secrets/initialAdminPassword`
