@@ -37,11 +37,23 @@ project became totally non-operational.
 for this purpose of creating an environment that executes whole process of testing. The file
 called “docker-compose.yml” has created as such for assignment of the root privileges to
 the docker container while also introducing the shared memory of it.
-3. Installation of Jenkins on Docker container has been completed. Jenkins is used for automating the whole testing process since an automated reporting tool
+![image](https://user-images.githubusercontent.com/41292368/126209573-d4247965-715f-4850-8e8c-38dc9ee52980.png)
+
+    2.1. The following command was executed in the folder which contains that yml file.
+$ docker-compose up -d
+    2.2. After the container was created and executed, the following command is executed in
+order to obtain initial password for access to Jenkins.
+$ docker exec my-jenkins-3 cat /var/jenkins_home/secrets/initialAdminPassword
+    2.3. Then, “http://localhost:8083” was opened Jenkins sign in screen was seen and
+obtained password was used to sign in Jenkins.
+    2.4. Installation of Jenkins on Docker container has completed.
+    
+Jenkins is used for automating the whole testing process since an automated reporting tool
 for the current condition of the artworks is tried to be achieved.
-4. The new job was created in the Jenkins as a freestyle project. This job is used for
+
+3. The new job was created in the Jenkins as a freestyle project. This job is used for
 automation of the build with the latest version of the dependencies as well as reporting.
-5. The testing tool builds the project with the latest versions of
+4. The testing tool builds the project with the latest versions of
 dependencies and reports the build status through the mail. To reach this aim, a post-build
 action has been added to the Jenkins job by using the Email Notification plugin. This plugin
 sends the report of the build through the mail by using SMTP protocol. The mail includes the
