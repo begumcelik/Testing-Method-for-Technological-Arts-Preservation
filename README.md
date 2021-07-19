@@ -39,9 +39,9 @@ called “docker-compose.yml” has created as such for assignment of the root p
 the docker container while also introducing the shared memory of it.
 ![image](https://user-images.githubusercontent.com/41292368/126209573-d4247965-715f-4850-8e8c-38dc9ee52980.png)
 
-    2.1. The following command was executed in the folder which contains that yml file.
-$ docker-compose up -d
-    2.2. After the container was created and executed, the following command is executed in
+    - The following command was executed in the folder which contains that yml file.
+    $ docker-compose up -d
+    - After the container was created and executed, the following command is executed in
 order to obtain initial password for access to Jenkins.
 $ docker exec my-jenkins-3 cat /var/jenkins_home/secrets/initialAdminPassword
     2.3. Then, “http://localhost:8083” was opened Jenkins sign in screen was seen and
