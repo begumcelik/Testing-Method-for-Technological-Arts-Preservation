@@ -39,7 +39,6 @@ called “docker-compose.yml” has created as such for assignment of the root p
 the docker container while also introducing the shared memory of it.
 
 
-
 ![image](https://user-images.githubusercontent.com/41292368/126209573-d4247965-715f-4850-8e8c-38dc9ee52980.png)
 
     - The following command was executed in the folder which contains that yml file.
