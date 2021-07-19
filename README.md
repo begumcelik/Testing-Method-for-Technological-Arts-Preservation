@@ -37,6 +37,9 @@ project became totally non-operational.
 for this purpose of creating an environment that executes whole process of testing. The file
 called “docker-compose.yml” has created as such for assignment of the root privileges to
 the docker container while also introducing the shared memory of it.
+
+
+
 ![image](https://user-images.githubusercontent.com/41292368/126209573-d4247965-715f-4850-8e8c-38dc9ee52980.png)
 
     - The following command was executed in the folder which contains that yml file.
